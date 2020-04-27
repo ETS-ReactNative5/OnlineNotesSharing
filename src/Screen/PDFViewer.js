@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, Dimensions,  } from 'react-native';
+import { StyleSheet, Dimensions, } from 'react-native';
 import MHeader from '../Component/hHeader';
 import Pdf from 'react-native-pdf';
-import { Button, Icon, Text, View} from 'native-base';
+import { Button, Icon, Text, View } from 'native-base';
 
 export default class PDFExample extends React.Component {
     constructor(prop) {
@@ -49,10 +49,10 @@ export default class PDFExample extends React.Component {
                         console.log(`Link presse: ${uri}`)
                     }}
                     style={styles.pdf} />
-                    <Button block bordered info >
-                            <Icon name="ios-cloud-upload" />
-                            <Text>UPLOAD</Text>
-                        </Button>
+                <Button block bordered info >
+                    <Icon name="ios-cloud-upload" />
+                    <Text>UPLOAD</Text>
+                </Button>
             </View>
         )
     }
