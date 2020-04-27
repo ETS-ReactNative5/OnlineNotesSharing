@@ -1,0 +1,139 @@
+[
+    {
+        "type": "header",
+        "version": "4.8.5",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "notes"
+    },
+    {
+        "type": "table",
+        "name": "uploads",
+        "database": "notes",
+        "data": [
+            {
+                "file_id": "57",
+                "file_name": "demo previer",
+                "file_description": "demo",
+                "file_type": "pdf",
+                "file_uploader": "user",
+                "file_uploaded_on": "2017-07-19 10:38:23",
+                "file_uploaded_to": "Computer Science",
+                "file": "578090.pdf",
+                "status": "approved"
+            },
+            {
+                "file_id": "56",
+                "file_name": "teacher3 demo",
+                "file_description": "demo",
+                "file_type": "txt",
+                "file_uploader": "teacher2",
+                "file_uploaded_on": "2017-07-19 10:38:16",
+                "file_uploaded_to": "Mechanical",
+                "file": "565834.txt",
+                "status": "approved"
+            },
+            {
+                "file_id": "55",
+                "file_name": "teacher title",
+                "file_description": "demo desc",
+                "file_type": "zip",
+                "file_uploader": "teacher",
+                "file_uploaded_on": "2017-07-22 11:32:02",
+                "file_uploaded_to": "Mechanical",
+                "file": "898387.zip",
+                "status": "approved"
+            },
+            {
+                "file_id": "59",
+                "file_name": "React",
+                "file_description": "About intro",
+                "file_type": "pdf",
+                "file_uploader": "bhawsar911",
+                "file_uploaded_on": "2019-09-14 15:57:25",
+                "file_uploaded_to": "Computer Science",
+                "file": "624125.pdf",
+                "status": "not approved yet"
+            },
+            {
+                "file_id": "54",
+                "file_name": "user title",
+                "file_description": "user desc",
+                "file_type": "zip",
+                "file_uploader": "student",
+                "file_uploaded_on": "2017-07-19 10:38:28",
+                "file_uploaded_to": "Computer Science",
+                "file": "848114.zip",
+                "status": "approved"
+            },
+            {
+                "file_id": "53",
+                "file_name": "demo title ..",
+                "file_description": "demo desc...",
+                "file_type": "zip",
+                "file_uploader": "user2",
+                "file_uploaded_on": "2017-07-19 10:24:36",
+                "file_uploaded_to": "Electrical",
+                "file": "305047.zip",
+                "status": "not approved yet"
+            },
+            {
+                "file_id": "52",
+                "file_name": "demo title",
+                "file_description": "demo desc......",
+                "file_type": "pdf",
+                "file_uploader": "user1",
+                "file_uploaded_on": "2017-07-22 11:32:22",
+                "file_uploaded_to": "Electrical",
+                "file": "845248.pdf",
+                "status": "approved"
+            },
+            {
+                "file_id": "51",
+                "file_name": "demo 3",
+                "file_description": "demo 3 desc....",
+                "file_type": "pdf",
+                "file_uploader": "user3",
+                "file_uploaded_on": "2017-07-22 11:32:15",
+                "file_uploaded_to": "Computer Science",
+                "file": "437056.pdf",
+                "status": "approved"
+            },
+            {
+                "file_id": "50",
+                "file_name": "demo2",
+                "file_description": "demo desc 2...",
+                "file_type": "ppt",
+                "file_uploader": "user3",
+                "file_uploaded_on": "2017-07-22 11:32:36",
+                "file_uploaded_to": "Computer Science",
+                "file": "800920.ppt",
+                "status": "approved"
+            },
+            {
+                "file_id": "49",
+                "file_name": "demo title",
+                "file_description": "demo description",
+                "file_type": "docx",
+                "file_uploader": "user3",
+                "file_uploaded_on": "2017-07-19 10:38:13",
+                "file_uploaded_to": "Computer Science",
+                "file": "502238.docx",
+                "status": "approved"
+            },
+            {
+                "file_id": "60",
+                "file_name": "oplik",
+                "file_description": "ppppppppp",
+                "file_type": "pdf",
+                "file_uploader": "bhawsar911",
+                "file_uploaded_on": "2019-09-14 16:04:43",
+                "file_uploaded_to": "Computer Science",
+                "file": "809974.pdf",
+                "status": "approved"
+            }
+        ]
+    }
+]
