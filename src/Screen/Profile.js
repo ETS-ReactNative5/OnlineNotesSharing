@@ -55,7 +55,7 @@ export default class Signup extends Component {
                 <MHeader SName={this.state.Screen} />
                 <View padder style={{ flexDirection: "row" }}>
                     <View style={{ width: "40%", justifyContent: "center", alignItems: "center" }}>
-                        <Thumbnail style={{ width: 100, height: 100, borderRadius: 300 }} large source={{ uri: "https://alphachetan.000webhostapp.com/user.png" }} />
+                        <Thumbnail style={{ width: 100, height: 100, borderRadius: 300 }} large source={{ uri: "https://onsbydch.000webhostapp.com/user.png" }} />
                         <Text style={{ fontSize: 25 }} >{this.state.userToken.uname}</Text>
                         {/* {this.putValue()} */}
                         <Text note>{this.state.userToken.urole}</Text>
