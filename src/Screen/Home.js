@@ -22,13 +22,20 @@ export default class Home extends Component {
                 this.props.navigation.navigate('Auth');
             }
         })
-        fetch('https://alphachetan.000webhostapp.com/uploads.json')
+        // fetch('https://onsbydch.000webhostapp.com/uploads.json')
+        //     .then(res => {
+        //         let temp = (res.json());
+        //         console.log(temp);
+        //     })
+        //     .then(result => {
+        //         this.setState({ mydata: result, received: true });
+        //         // alert(this.state.mydata);
+        //     }).catch((err) => { console.log("error" + err); })
+        fetch('https://onsbydch.000webhostapp.com/uploads.json')
             .then(res => res.json())
-            .then(result => {
-                this.setState({ mydata: result, received: true });
-                // alert(this.state.mydata);
-            }
-            )
+            .then(res => {
+                this.setState({ mydata: res, received: true });
+            })
     }
 
     onClickItem(item) {
@@ -92,7 +99,8 @@ export default class Home extends Component {
                                         <Text>11h ago</Text>
                                     </Right>
                                 </CardItem>
-                            </Card>}
+                            </Card>
+                        }
                     />
                 </Content>
             </Container>
