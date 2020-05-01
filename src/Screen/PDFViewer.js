@@ -30,8 +30,32 @@ export default class PDFExample extends React.Component {
         var xhr = new XMLHttpRequest();
         xhr.open('POST', 'http://192.168.43.221:5000/file-upload');
         xhr.send(data);
-        let temp =xhr.statusText;
-        console.log(temp);
+        xhr.onload = () => {
+            // const response = JSON.parse(xhr.response);
+            // console.log(response);
+            // ... do something with the successful response
+            let submitted = (xhr.status );
+            console.log(submitted+ "-1");
+            if (xhr.status == 201){
+                // alert((JSON.parse(xhr.response)).message);
+                this.props.navigation.navigate("Success");
+            }else
+                alert("Something went wrong");
+        };
+        xhr.onerror = e => {
+            console.log(e, 'upload failed' + "-2");
+            alert("Something went wrong");
+        };
+        xhr.ontimeout = e => {
+            console.log(e, 'cloudinary timeout' + "-3");
+        };
+        if (xhr.upload) {
+            // track the upload progress
+            xhr.upload.onprogress = ({ total, loaded }) => {
+                const uploadProgress = (loaded / total);
+                console.log(uploadProgress + "-4");
+            };
+        }
     }
 
     render() {

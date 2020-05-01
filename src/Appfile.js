@@ -14,6 +14,7 @@ import PostScreen from "././Screen/PostSccreen";
 import editProfileScreen from "././Screen/EditProfie";
 import AfterScreen from "././Screen/AfterSelection";
 import PDFViewer from "././Screen/PDFViewer";
+import Success from "././Screen/Success";
 
 import firebaseR from "firebase";
 
@@ -84,7 +85,7 @@ const AppStack = createStackNavigator({
     },
     AfterSelecting: AfterScreen,
     HScreen,
-    editProfileScreen, 
+    editProfileScreen,
     PDFViewer,
 }, {
     defaultNavigationOptions: {
@@ -124,6 +125,7 @@ export default createAppContainer(createSwitchNavigator(
         AuthLoading: AuthLoadingScreen,
         App: AppStack,
         Auth: AuthStack,
+        Success
     },
     {
         initialRouteName: 'AuthLoading',
