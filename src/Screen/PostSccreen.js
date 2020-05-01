@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { FlatList, Image, AsyncStorage, View } from 'react-native';
-import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
+import { View } from 'react-native';
+import { Container,Text, Button, Icon} from 'native-base';
 import MHeader from "../Component/hHeader";
 import DocumentPicker from "react-native-document-picker";
-
-import * as firebaseR from "firebase";
 
 export default class Home extends Component {
 

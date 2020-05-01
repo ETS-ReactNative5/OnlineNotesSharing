@@ -18,6 +18,22 @@ export default class PDFExample extends React.Component {
         title: "Select PDF"
     }
 
+    uploadFile() {
+        const data = new FormData();
+        // data.append('file', this.state.singleFile.uri);
+        data.append('filename', this.state.mydata.name);
+        data.append('file', {
+            uri: this.state.mydata.uri,
+            type: this.state.mydata.type, // or photo.type
+            name: this.state.mydata.name
+        });
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'http://192.168.43.221:5000/file-upload');
+        xhr.send(data);
+        let temp =xhr.statusText;
+        console.log(temp);
+    }
+
     render() {
         var temp = this.state.mydata.uri;
         const source = {
@@ -49,7 +65,7 @@ export default class PDFExample extends React.Component {
                         console.log(`Link presse: ${uri}`)
                     }}
                     style={styles.pdf} />
-                <Button block bordered info >
+                <Button block bordered info onPress={() => this.uploadFile()} >
                     <Icon name="ios-cloud-upload" />
                     <Text>UPLOAD</Text>
                 </Button>
